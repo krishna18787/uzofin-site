@@ -716,23 +716,26 @@ h1 {
 .carousel-showcase__eyebrow {
   margin: 0;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #4da9ff;
+  letter-spacing: 0.02em;
 }
 
 .carousel-showcase__title {
-  margin: 16px 0 0;
+  margin: 20px 0 0;
   font-family: Poppins, sans-serif;
-  font-size: clamp(40px, 4vw, 64px);
+  font-size: clamp(56px, 6.5vw, 80px);
   font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   color: #fff;
 }
 
 .carousel-showcase__viewport {
   position: relative;
   z-index: 1;
-  margin-top: 56px;
+  margin-top: 72px;
   overflow: hidden;
   width: 100%;
   mask-image: linear-gradient(
@@ -754,9 +757,9 @@ h1 {
 .carousel-showcase__track {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 28px;
   width: max-content;
-  padding: 8px 24px 24px;
+  padding: 12px 24px 32px;
   animation: carouselMarquee 45s linear infinite;
 }
 
@@ -765,10 +768,10 @@ h1 {
 }
 
 .carousel-card {
-  flex: 0 0 300px;
-  width: 300px;
-  padding: 28px 24px;
-  border-radius: 18px;
+  flex: 0 0 340px;
+  width: 340px;
+  padding: 36px 28px;
+  border-radius: 20px;
   background: rgba(15, 23, 42, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.12);
   text-align: center;
@@ -779,7 +782,7 @@ h1 {
 }
 
 .carousel-card--mid {
-  transform: translateY(40px);
+  transform: translateY(48px);
 }
 
 .carousel-card:hover {
@@ -789,30 +792,36 @@ h1 {
 }
 
 .carousel-card--mid:hover {
-  transform: translateY(34px);
+  transform: translateY(42px);
 }
 
 .carousel-card h3 {
   margin: 0;
   font-family: Poppins, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  color: #c4b5fd;
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  background: linear-gradient(90deg, #a855f7 0%, #e879f9 42%, #fda4af 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .carousel-card p {
-  margin: 14px 0 0;
-  font-size: 14px;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.88);
+  margin: 18px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .carousel-card a {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 20px;
   color: #fff;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @keyframes carouselMarquee {
@@ -1156,7 +1165,7 @@ h1 {
   }
 
   .carousel-card--mid {
-    transform: translateY(40px);
+    transform: translateY(48px);
   }
 
   .carousel-showcase__viewport {
@@ -1225,7 +1234,7 @@ h1 {
   }
 
   .carousel-card--mid {
-    transform: translateY(24px);
+    transform: translateY(32px);
   }
 
   .future-hero {
